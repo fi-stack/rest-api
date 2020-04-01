@@ -1,0 +1,32 @@
+[
+    {
+        "nama": "Moch Rafi Nur Oktafian",
+        "umur": 22,
+        "nim": "1101154125",
+        "lulus": true,
+        "hobby": [
+            "coding",
+            "gibah",
+            "game"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Asep Sodikin",
+            "pembimbing2": "Asep Michael"
+        }
+    },
+    {
+        "nama": "Moch Rafi Nur Oktafian",
+        "umur": 22,
+        "nim": "1101154125",
+        "lulus": true,
+        "hobby": [
+            "coding",
+            "gibah",
+            "game"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Asep Sodikin",
+            "pembimbing2": "Asep Michael"
+        }
+    }
+]
