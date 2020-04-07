@@ -12,6 +12,8 @@ class Mahasiswa extends REST_Controller
     {
         parent::__construct();
         $this->load->model('Mahasiswa_model', 'mahasiswa');
+
+        $this->methods['index_get']['limit'] = 10;
     }
 
     public function index_get()
@@ -52,7 +54,7 @@ class Mahasiswa extends REST_Controller
                     'id' => $id,
                     'message' => 'deleted!'
                     // HTTP_NO_CONTENT tidak muncul di postman
-                ], REST_Controller::HTTP_OK);
+                ], REST_Controller::HTTP_NO_CONTENT);
             } else {
                 // id not found
                 $this->response([
@@ -99,7 +101,7 @@ class Mahasiswa extends REST_Controller
             $this->response([
                 'status' => true,
                 'message' => 'data mahasiswa has been updated'
-            ], REST_Controller::HTTP_OK);
+            ], REST_Controller::HTTP_NO_CONTENT);
         } else {
             $this->response([
                 'status' => false,
